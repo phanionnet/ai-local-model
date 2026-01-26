@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animal Chatbot</title>
+</head>
+<body>
+    <h2>Local Animal AI Bot</h2>
+
+    <input type="text" id="animal" placeholder="Enter animal name" />
+    <button onclick="ask()">Ask</button>
+
+    <p id="output"></p>
+
+    <script>
+        async function ask() {
+            const animal = document.getElementById("animal").value;
+            const res = await fetch(`http://localhost:8000/describe/${animal}`);
+            const data = await res.json();
+            document.getElementById("output").innerText = data.description;
+        }
+    </script>
+</body>
+</html>

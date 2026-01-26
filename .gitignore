@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+animalbot-env/
+venv/
+.env/
+
+# OS
+.DS_Store
+
+# AI model files (large & local)
+.ollama/
