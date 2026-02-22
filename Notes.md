@@ -165,7 +165,7 @@ def describe(animal: str):
     }
 
 3.4 Run Backend
-uvicorn app:app --reload
+uvicorn backend.app:app --reload
 
 
 Test:

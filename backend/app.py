@@ -23,6 +23,7 @@ app.add_middleware(
 
 OLLAMA_API = os.getenv("OLLAMA_API", "http://localhost:11434/api/generate")
 MODEL = os.getenv("OLLAMA_MODEL", "phi3:mini")
+#MODEL = os.getenv("OLLAMA_MODEL", "gemma2:2b")
 
 @app.get("/describe/{animal}")
 def describe(animal: str):
